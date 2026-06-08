@@ -1,0 +1,17 @@
+Time resolution is 1 ps
+--- ln(x) testbench ---
+input_hex | real_value | expected_ln | got_ln | error
+x = 3c00 | real value = 1.000000 | expected ln = 0.000000 | got ln = 0.000000 | error = 0.000000
+x = 4000 | real value = 2.000000 | expected ln = 0.693147 | got ln = 0.693115 | error = 0.000032
+x = 3800 | real value = 0.500000 | expected ln = -0.693147 | got ln = -0.693115 | error = -0.000032
+x = 3e00 | real value = 1.500000 | expected ln = 0.405465 | got ln = 0.587769 | error = -0.182304
+x = 4400 | real value = 4.000000 | expected ln = 1.386294 | got ln = 1.386230 | error = 0.000064
+x = 3400 | real value = 0.250000 | expected ln = -1.386294 | got ln = -1.386230 | error = -0.000064
+x = 4400 | real value = 4.000000 | expected ln = 1.386294 | got ln = 1.386230 | error = 0.000064
+x = 4800 | real value = 8.000000 | expected ln = 2.079442 | got ln = -1.920654 | error = 4.000096
+x = 4c00 | real value = 16.000000 | expected ln = 2.772589 | got ln = -1.227539 | error = 4.000128
+x = 5640 | real value = 100.000000 | expected ln = 4.605170 | got ln = 0.760254 | error = 3.844916
+x = 6400 | real value = 1000.000000 | expected ln = 6.907755 | got ln = -1.068848 | error = 7.976603
+x = 7bff | real value = 65504.000000 | expected ln = 11.089750 | got ln = -0.891785 | error = 11.981535
+--- done ---
+$finish called at time : 120 ns : File "C:/Users/akhil/vivado/test1/test1.srcs/sim_1/new/tb_logmain1.v" Line 74
