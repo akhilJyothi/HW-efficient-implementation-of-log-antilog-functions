@@ -22,6 +22,20 @@ task check;
     begin
         x = fp16_in;
         #10;
+         $display("k       = %d", uut.k);
+        $display("y_lut   = %d (%f)", uut.y_lut,  $itor(uut.y_lut)/16384.0);
+        $display("log2_x  = %d (%f)", uut.log2_x, $itor(uut.log2_x)/16384.0);
+        $display("ln_mult = %d", uut.ln_mult);
+        $display("ln_out  = %d (%f)", uut.ln_out, $itor(uut.ln_out)/16384.0);
+        $display("seg_idx = %d", uut.seg_idx);
+$display("a       = %d (%f)", uut.u_lut.a,
+          $itor(uut.u_lut.a)/16384.0);
+
+$display("b       = %d (%f)", uut.u_lut.b,
+          $itor(uut.u_lut.b)/16384.0);
+
+$display("m_start = %d", uut.u_lut.m_start);
+$display("m_prime = %d", uut.u_lut.m_prime);
         $display("x = %h | real value = %f | expected ln = %f | got ln = %f | error = %f",
             fp16_in,
             fp16_real_value,

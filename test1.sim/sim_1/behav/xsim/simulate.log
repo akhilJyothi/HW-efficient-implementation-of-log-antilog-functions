@@ -1,17 +1,137 @@
 Time resolution is 1 ps
 --- ln(x) testbench ---
 input_hex | real_value | expected_ln | got_ln | error
+k       =  0
+y_lut   =      0 (0.000000)
+log2_x  =        0 (0.000000)
+ln_mult =            0
+ln_out  =      0 (0.000000)
+seg_idx =  0
+a       =  23454 (1.431519)
+b       =      0 (0.000000)
+m_start = 1024
+m_prime =     0
 x = 3c00 | real value = 1.000000 | expected ln = 0.000000 | got ln = 0.000000 | error = 0.000000
+k       =  1
+y_lut   =      0 (0.000000)
+log2_x  =    16384 (1.000000)
+ln_mult =    186056704
+ln_out  =  11356 (0.693115)
+seg_idx =  0
+a       =  23454 (1.431519)
+b       =      0 (0.000000)
+m_start = 1024
+m_prime =     0
 x = 4000 | real value = 2.000000 | expected ln = 0.693147 | got ln = 0.693115 | error = 0.000032
+k       = 63
+y_lut   =      0 (0.000000)
+log2_x  =   -16384 (-1.000000)
+ln_mult =   -186056704
+ln_out  = -11356 (-0.693115)
+seg_idx =  0
+a       =  23454 (1.431519)
+b       =      0 (0.000000)
+m_start = 1024
+m_prime =     0
 x = 3800 | real value = 0.500000 | expected ln = -0.693147 | got ln = -0.693115 | error = -0.000032
-x = 3e00 | real value = 1.500000 | expected ln = 0.405465 | got ln = 0.587769 | error = -0.182304
+k       =  0
+y_lut   =   9587 (0.585144)
+log2_x  =     9587 (0.585144)
+ln_mult =    108869972
+ln_out  =   6644 (0.405518)
+seg_idx = 32
+a       =  15438 (0.942261)
+b       =   9587 (0.585144)
+m_start = 1536
+m_prime =     0
+x = 3e00 | real value = 1.500000 | expected ln = 0.405465 | got ln = 0.405518 | error = -0.000053
+k       =  2
+y_lut   =      0 (0.000000)
+log2_x  =    32768 (2.000000)
+ln_mult =    372113408
+ln_out  =  22712 (1.386230)
+seg_idx =  0
+a       =  23454 (1.431519)
+b       =      0 (0.000000)
+m_start = 1024
+m_prime =     0
 x = 4400 | real value = 4.000000 | expected ln = 1.386294 | got ln = 1.386230 | error = 0.000064
+k       = 62
+y_lut   =      0 (0.000000)
+log2_x  =   -32768 (-2.000000)
+ln_mult =   -372113408
+ln_out  = -22712 (-1.386230)
+seg_idx =  0
+a       =  23454 (1.431519)
+b       =      0 (0.000000)
+m_start = 1024
+m_prime =     0
 x = 3400 | real value = 0.250000 | expected ln = -1.386294 | got ln = -1.386230 | error = -0.000064
+k       =  2
+y_lut   =      0 (0.000000)
+log2_x  =    32768 (2.000000)
+ln_mult =    372113408
+ln_out  =  22712 (1.386230)
+seg_idx =  0
+a       =  23454 (1.431519)
+b       =      0 (0.000000)
+m_start = 1024
+m_prime =     0
 x = 4400 | real value = 4.000000 | expected ln = 1.386294 | got ln = 1.386230 | error = 0.000064
+k       =  3
+y_lut   =      0 (0.000000)
+log2_x  =    49152 (3.000000)
+ln_mult =    558170112
+ln_out  = -31468 (-1.920654)
+seg_idx =  0
+a       =  23454 (1.431519)
+b       =      0 (0.000000)
+m_start = 1024
+m_prime =     0
 x = 4800 | real value = 8.000000 | expected ln = 2.079442 | got ln = -1.920654 | error = 4.000096
+k       =  4
+y_lut   =      0 (0.000000)
+log2_x  =    65536 (4.000000)
+ln_mult =    744226816
+ln_out  = -20112 (-1.227539)
+seg_idx =  0
+a       =  23454 (1.431519)
+b       =      0 (0.000000)
+m_start = 1024
+m_prime =     0
 x = 4c00 | real value = 16.000000 | expected ln = 2.772589 | got ln = -1.227539 | error = 4.000128
-x = 5640 | real value = 100.000000 | expected ln = 4.605170 | got ln = 0.760254 | error = 3.844916
+k       =  6
+y_lut   =  10552 (0.644043)
+log2_x  =   108856 (6.644043)
+ln_mult =   1236168736
+ln_out  =   9913 (0.605042)
+seg_idx = 33
+a       =  14832 (0.905273)
+b       =  10552 (0.644043)
+m_start = 1600
+m_prime =     0
+x = 5640 | real value = 100.000000 | expected ln = 4.605170 | got ln = 0.605042 | error = 4.000128
+k       = 10
+y_lut   =      0 (0.000000)
+log2_x  =   163840 (10.000000)
+ln_mult =   1860567040
+ln_out  = -17512 (-1.068848)
+seg_idx =  0
+a       =  23454 (1.431519)
+b       =      0 (0.000000)
+m_start = 1024
+m_prime =     0
 x = 6400 | real value = 1000.000000 | expected ln = 6.907755 | got ln = -1.068848 | error = 7.976603
-x = 7bff | real value = 65504.000000 | expected ln = 11.089750 | got ln = -0.891785 | error = 11.981535
+k       = 15
+y_lut   =  16375 (0.999451)
+log2_x  =   262135 (15.999451)
+ln_mult =   2976805060
+ln_out  = -14919 (-0.910583)
+seg_idx = 39
+a       =  12007 (0.732849)
+b       =  15636 (0.954346)
+m_start = 1984
+m_prime =    63
+x = 7bff | real value = 65504.000000 | expected ln = 11.089750 | got ln = -0.910583 | error = 12.000333
 --- done ---
-$finish called at time : 120 ns : File "C:/Users/akhil/vivado/test1/test1.srcs/sim_1/new/tb_logmain1.v" Line 74
+$finish called at time : 120 ns : File "C:/Users/akhil/vivado/test1/test1.srcs/sim_1/new/tb_logmain1.v" Line 88

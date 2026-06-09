@@ -18,8 +18,8 @@ reg signed [11:0] m_prime;          // signed, 1 extra bit for safe subtraction
 reg signed [31:0] mult;
 
 initial begin
-    $readmemh("lut_a.mem",  lut_a);
-    $readmemh("lut_b.mem",  lut_b);
+    $readmemh("a_lut.mem",  lut_a);
+    $readmemh("b_lut.mem",  lut_b);
     $readmemh("edges.mem",  edges); // must be regenerated with Q1.10 scaling
 end
 
